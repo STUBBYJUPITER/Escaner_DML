@@ -1,6 +1,7 @@
 package e_regular;
 
 
+import Controladores.C_TablaDinamica;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 //sergio galicia barron
@@ -28,6 +29,8 @@ public class E_regular {
         ValidarExpresionExponencial(texto, expresion);
         ValidarExpresionPorcentaje(texto, expresion);
         //ValidarExpresionNatural(texto, expresion);
+        C_TablaDinamica nueva_tabla=new C_TablaDinamica();
+        nueva_tabla.Iniciar();
 
     }
 
