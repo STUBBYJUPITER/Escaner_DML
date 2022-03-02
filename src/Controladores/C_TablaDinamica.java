@@ -20,9 +20,28 @@ public class C_TablaDinamica {
     }
     public void Iniciar(){
         this.tabla1=new tabla_dinamica();
+        this.tabla1.setTitle("Traductor SQL");
         tabla1.setVisible(true);
     
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     public tabla_dinamica getTabla1() {
         return tabla1;
