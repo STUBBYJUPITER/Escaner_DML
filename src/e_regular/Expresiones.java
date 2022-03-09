@@ -10,50 +10,65 @@ package e_regular;
  * @author CYBERTRON
  */
 public class Expresiones {
-
     
-    public String real = "\\d+[.,]+([0-9]+[E])?\\d+";
-    public String exponencial = "\\d+([.][0-9])?[E]\\d+";
-    public String porcentaje = "[1]?[0-9]?\\d+[%]";
-    public String natural = "\\d[^.$]";
-
+    
+    public String palabrasReservadas = "SELECT|FROM|WHERE|IN|AND|OR|CREATE|TABLE|CHAR|NUMERIC|NOT|NULL|CONSTRAINT|KEY|PRIMARY|FOREING|REFERENCES|INSERT|INTO|VALUES";
+    public String delimitadores= "[\\,\\.\\(\\)\\´]";
+    public String operadores = "[\\+\\-\\*\\/]";
+    public String constantes = "[ab]";
+    public String relacionales = "[\\>\\<\\=\\>=\\<=]";
+    public String identificadores = "ñ";
     public Expresiones() {
 
     }
 
-    public String getReal() {
-        return real;
+    public String getpalabrasReservadas() {
+        return palabrasReservadas ;
     }
 
-    public void setReal(String real) {
-        this.real = real;
+    public void setpalabrasReservadas(String palabrasReservadas) {
+        this.palabrasReservadas  = palabrasReservadas;
     }
 
-    public String getExponencial() {
-        return exponencial;
+    public String getdelimitadores() {
+        return delimitadores;
     }
 
-    public void setExponencial(String exponencial) {
-        this.exponencial = exponencial;
+    public void setdelimitadores(String delimitadores) {
+        this.delimitadores = delimitadores;
     }
 
-    public String getPorcentaje() {
-        return porcentaje;
+    public String getoperadores() {
+        return operadores;
     }
 
-    public void setPorcentaje(String porcentaje) {
-        this.porcentaje = porcentaje;
+    public void setoperadores(String operadores) {
+        this.operadores = operadores;
     }
 
-    public String getNatural() {
-        return natural;
+    public String getconstantes () {
+        return constantes ;
     }
 
-    public void setNatural(String natural) {
-        this.natural = natural;
+    public void setconstantes (String constantes ) {
+        this.constantes  = constantes ;
     }
 
-  
+   public String getrelacionales () {
+        return relacionales ;
+    }
+
+    public void setrelacionales (String relacionales ) {
+        this.relacionales  = relacionales;
+    }
     
+
+     public String getidentificadores() {
+        return relacionales ;
+    }
+
+    public void setidentificadores(String identificadores ) {
+        this.identificadores  = identificadores;
+    }
 
 }

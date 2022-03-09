@@ -10,5 +10,8 @@ package Modulos;
  * @author CYBERTRON
  */
 public class Modulo_Errores {
+    Modulo_Analisis modulo_analisis;
+    
+    
     
 }

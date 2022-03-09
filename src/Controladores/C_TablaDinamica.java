@@ -5,6 +5,9 @@
  */
 package Controladores;
 
+import Modulos.Modulo_Analisis;
+import Modulos.Modulo_Errores;
+import Modulos.Modulo_Resultados;
 import e_regular.Expresiones;
 import ventanas.tabla_dinamica;
 
@@ -15,6 +18,9 @@ import ventanas.tabla_dinamica;
 public class C_TablaDinamica {
     public tabla_dinamica tabla1;
     public Expresiones expresion1;
+    public Modulo_Analisis modulo_analisis;
+    public Modulo_Resultados modulo_resultados;
+    public Modulo_Errores modulo_errores;
     public C_TablaDinamica(){
     
     }
@@ -22,6 +28,8 @@ public class C_TablaDinamica {
         this.tabla1=new tabla_dinamica();
         this.tabla1.setTitle("Traductor SQL");
         tabla1.setVisible(true);
+        this.modulo_analisis=new Modulo_Analisis();
+       
     
     }
     

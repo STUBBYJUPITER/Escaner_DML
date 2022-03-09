@@ -5,7 +5,14 @@
  */
 package ventanas;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import Modulos.Modulo_Analisis;
 
 /**
  *
@@ -108,10 +115,10 @@ public class tabla_dinamica extends javax.swing.JFrame {
                 .addComponent(JTF_insertar_consulta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71)
                 .addComponent(JB_aceptar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(115, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, frame1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 414, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -135,8 +142,9 @@ public class tabla_dinamica extends javax.swing.JFrame {
 
     private void JB_aceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JB_aceptarActionPerformed
         // TODO add your handling code here:
+        //Modulo_Analisis modulo_analisis1=new Modulo_Analisis(this.tabla_contenido);
           String texto=JTF_insertar_consulta.getText();
-        System.out.println(texto);
+       // System.out.println(texto);
         JTF_insertar_consulta.setText("");
     }//GEN-LAST:event_JB_aceptarActionPerformed
 
@@ -145,6 +153,7 @@ public class tabla_dinamica extends javax.swing.JFrame {
       
     }//GEN-LAST:event_JTF_insertar_consultaActionPerformed
 
+   
     /**
      * @param args the command line arguments
      */
@@ -181,6 +190,71 @@ public class tabla_dinamica extends javax.swing.JFrame {
             }
         });
     }
+
+    public DefaultTableModel getModelotabla() {
+        return modelotabla;
+    }
+
+    public void setModelotabla(DefaultTableModel modelotabla) {
+        this.modelotabla = modelotabla;
+    }
+
+    public JButton getJB_aceptar() {
+        return JB_aceptar;
+    }
+
+    public void setJB_aceptar(JButton JB_aceptar) {
+        this.JB_aceptar = JB_aceptar;
+    }
+
+    public JTextField getJTF_insertar_consulta() {
+        return JTF_insertar_consulta;
+    }
+
+    public void setJTF_insertar_consulta(JTextField JTF_insertar_consulta) {
+        this.JTF_insertar_consulta = JTF_insertar_consulta;
+    }
+
+    public JPanel getFrame1() {
+        return frame1;
+    }
+
+    public void setFrame1(JPanel frame1) {
+        this.frame1 = frame1;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public void setjLabel2(JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    public void setjScrollPane1(JScrollPane jScrollPane1) {
+        this.jScrollPane1 = jScrollPane1;
+    }
+
+    public JTable getTabla_contenido() {
+        return tabla_contenido;
+    }
+
+    public void setTabla_contenido(JTable tabla_contenido) {
+        this.tabla_contenido = tabla_contenido;
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JB_aceptar;
